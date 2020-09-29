@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    min-height: 100vh;
+    background: linear-gradient(147deg, rgba(255, 229, 59, 0.5) 0%, rgba(255, 37, 37, 0.3) 74%), url("bg-image.jpg") center/cover no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.top-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+.logo h1, .menu-icon span{
+    font-size: 25px;
+}
+.menu-icon span i{
+    cursor: pointer;
+}
+.bottom-head{
+    height: calc(100vh - 80.4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bottom-head h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 40px 0;
+    width: 80vw;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+.bottom-head button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 15px 36px;
+    color: #fff;
+    transition: all 1s ease;
+}
+.bottom-head button:hover{
+    background: #fff;
+    color: #000;
+}
+
+/** side nav **/
+.side-nav{
+    background: #fb4d3d;
+    padding: 25px;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 360px;
+    /***********/
+    right: -400px;
+    transition: right 0.6s ease;
+}
+.side-nav span{
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 25px;
+}
+.side-nav span i{
+    cursor: pointer;
+}
+nav{
+    margin: 20px 0;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 18px 0;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+nav ul li a:hover{
+    opacity: 0.9;
+}
+nav ul li:last-child a{
+    border-bottom: none;
+}
+nav button{
+    display: block;
+    width: 100%;
+    border: 2px solid #fff;
+    background: #fff;
+    margin: 18px 0;
+    padding: 16px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav button:last-of-type{
+    background: transparent;
+    color: #fff;
+}
+nav button:hover{
+    box-shadow: 0 0 5px #f1f1f1;
+}
+
+/**** media queries ***/
+@media screen and (max-width: 400px){
+    .bottom-head h2{
+        font-size: 25px;
+    }
+    .side-nav{
+        width: 100vw;
+    }
+}
+
+/**********************/
+
+.navToggle{
+    right: 0;
+}
